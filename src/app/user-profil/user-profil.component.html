@@ -4,6 +4,9 @@ Nom : {{ User.name }} {{ User.firstName }}
 </p><br>
 <div *ngIf="toDisplay">Age: {{ User.age }}</div><br>
 <p>Citation: {{ User.quote }}<br>
-  <input [(ngModel)]="User.quote">
 </p>
+<div>
+  <input [(ngModel)] = "User.quote"/>
+</div>
+
   <button (click)="cacher()">afficher/masquer mon age</button>
